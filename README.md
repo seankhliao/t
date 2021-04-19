@@ -1,8 +1,13 @@
 # t
 
+less portable, stripped down version of [tag](https://github.com/aykamko/tag),
+also uses a larger (64MiB vs 64KiB) buffer for readline.
+
 [![pkg.go.dev](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat-square)](https://pkg.go.dev/go.seankhliao.com/t)
 ![Version](https://img.shields.io/github/v/tag/seankhliao/t?sort=semver&style=flat-square)
 [![License](https://img.shields.io/github/license/seankhliao/t.svg?style=flat-square)](LICENSE)
+
+## install
 
 ```go
 go install go.seankhliao.com/t@latest
@@ -17,7 +22,20 @@ function t() {
 }
 ```
 
-less portable, stripped down version of [tag](https://github.com/aykamko/tag),
-also uses a larger (64MiB vs 64KiB) buffer for readline.
+## usage
 
-TODO: replace bufio.Reader with https://godoc.org/golang.org/x/text/transform
+```sh
+$ t func
+main.go
+[1] 18:1:func main() {
+
+README.md
+[2] 14:1:function t() {
+
+# opens first link with nvim
+$ e1
+```
+
+## todo
+
+- [ ] replace `bufio.Reader` with https://godoc.org/golang.org/x/text/transform

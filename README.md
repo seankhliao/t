@@ -5,7 +5,7 @@ also uses a larger (64MiB vs 64KiB) buffer for readline.
 
 [![License](https://img.shields.io/github/license/seankhliao/t.svg?style=flat-square)](LICENSE)
 ![Version](https://img.shields.io/github/v/tag/seankhliao/t?sort=semver&style=flat-square)
-[![Go Reference](https://pkg.go.dev/badge/go.seankhliao.com/fin.svg)](https://pkg.go.dev/go.seankhliao.com/t)
+[![Go Reference](https://pkg.go.dev/badge/go.seankhliao.com/t.svg)](https://pkg.go.dev/go.seankhliao.com/t)
 
 ## install
 
